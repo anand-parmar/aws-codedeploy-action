@@ -146,7 +146,7 @@ if [ -z "$INPUT_ARCHIVE" ]; then
 
     echo "::debug::Zip directory located (with appspec.yml)."
 
-    ZIP_FILENAME=$GITHUB_RUN_ID-$GITHUB_SHA.zip
+    ZIP_FILENAME=build.zip
 
     # This creates a temp file to explode space delimited excluded files
     # into newline delimited exclusions passed to "-x" on the zip command.
